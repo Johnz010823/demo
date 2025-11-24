@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vldm-b4@)qbqg+ys4^=gi^zwr=who-fpagau*$7rmi$0w5si=v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://portfolio-site.onrender.com']
+ALLOWED_HOSTS = ['my-portfolio.onrender.com']
 
 
 # Application definition
@@ -115,7 +115,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATIC_URL = 'static/'
 
