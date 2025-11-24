@@ -1,0 +1,58 @@
+/* static/css/styles.css */
+:root{
+  --max-width: 800px;
+  --accent: #222;
+  --muted: #555;
+  --gap: 18px;
+  font-size: 16px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body{
+  background: white;
+  color: var(--accent);
+  margin: 0;
+  padding: 24px;
+  -webkit-print-color-adjust: exact;
+}
+
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  line-height: 1.45;
+}
+
+/* header */
+.header { text-align: left; margin-bottom: 12px; }
+.name { font-size: 28px; margin: 6px 0; }
+.title { font-size: 18px; color: var(--muted); margin: 0 0 8px; }
+.intro { margin-bottom: 8px; }
+
+/* sections */
+section { margin-bottom: 16px; }
+h3 { font-size: 18px; margin-bottom: 8px; border-left: 4px solid #000; padding-left: 8px; }
+h4 { font-size: 16px; margin: 6px 0; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.skills-grid ul { margin: 6px 0 0 18px; }
+
+/* Projects */
+.project { margin-bottom: 8px; }
+.project ul { margin: 6px 0 0 18px; }
+
+/* Misc */
+hr { border: none; border-top: 1px solid #ddd; margin: 12px 0; }
+
+.contact { font-size: 14px; color: var(--muted); margin-top: 6px; }
+
+/* Print rules - make single page long vertical */
+@media print {
+  body { margin: 0; padding: 12mm; -webkit-print-color-adjust: exact; }
+  .container { max-width: 180mm; } /* long bond */
+  a:after { content: " (" attr(href) ")"; font-size: 10px; }
+}

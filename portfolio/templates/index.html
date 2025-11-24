@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Paolo Silvano - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 15px 0 5px 0;
+            font-size: 2rem;
+        }
+        header p.title {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin: 5px 0 20px 0;
+        }
+        header p.intro {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            text-indent: 40px;
+            font-size: 1rem;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            background: #1e90ff;
+            color: white;
+            padding: 5px 12px;
+            margin: 3px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            header p.intro {
+                font-size: 0.95rem;
+                text-indent: 20px;
+            }
+            .skills span {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.4rem;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+            header p.intro {
+                font-size: 0.9rem;
+                text-indent: 15px;
+            }
+            .skills span {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="{% static 'john_photo.jpg' %}" alt="John Paolo Silvano">
+    <h1>John Paolo A. Silvano</h1>
+    <p class="title">Junior Python/Django Developer</p>
+    <p class="intro">
+        A Junior Python/Django Developer with a strong foundation in creating efficient, scalable, and user-friendly web applications. I specialize in turning ideas into functional solutions using Python, Django, HTML/CSS, and JavaScript, with experience in backend logic, front-end interfaces, and database integration. I focus on clean, maintainable code, responsive design, and practical problem-solving, while continuously learning new technologies to deliver professional web solutions that enhance user experience and meet project goals.
+    </p>
+</header>
+
+<main>
+    <section id="skills">
+        <h2>Skill Set</h2>
+        <div class="skills">
+            <strong>Programming Languages:</strong>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span><br>
+            <strong>Frameworks & Tools:</strong>
+            <span>Django</span>
+            <span>Bootstrap</span>
+            <span>GitHub</span><br>
+            <strong>Database Knowledge:</strong>
+            <span>SQLite</span>
+            <span>MySQL (Basic)</span><br>
+            <strong>Other Skills:</strong>
+            <span>Debugging</span>
+            <span>UI/UX basics</span>
+            <span>Version control (Git)</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects / Case Study</h2>
+        <p><strong>Library System Console App — Impact:</strong> I developed a library management console program for school use. It automated book borrowing, student registration, and transaction tracking. By removing manual logging, error rate decreased from 20% to less than 5%.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Academic projects (Django applications & Python system apps)</li>
+            <li>Freelance tasks (client communication & simple web tasks)</li>
+            <li>Hands-on coding with Python and GitHub</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications / Training</h2>
+        <ul>
+            <li>Python Fundamentals (Online Course)</li>
+            <li>Django Basics & Web Development Tutorials</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact">
+            <p>Email: <a href="mailto:johnpaolosilvano24@gmail.com">johnpaolosilvano24@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Johnz010823" target="_blank">github.com/Johnz010823</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/john-paolo-silvano/" target="_blank">linkedin.com/in/john-paolo-silvano</a></p>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
